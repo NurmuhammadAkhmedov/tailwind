@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              backgroundImage: {
+                'back-Img': "url('./IMAGE.png')"
+      }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    
+    <header class="bg-[#121214]">
+        <div class="container mx-auto">
+            <nav class="flex items-center gap-[30px] text-white py-[20px]">
+                <img src="./IMAGE.svg" alt="logo">
+
+            <ul class="flex items-center gap-[20px]">
+                <li><a class="text-[#A6A8AD] text-[16px]" href="#">Sounds</a></li>
+                <li><a class="text-[#A6A8AD] text-[16px]" href="#">Skills</a></li>
+                <li><a class="text-[#A6A8AD] text-[16px]" href="#">Plugins</a></li>
+                <li><a class="text-[#A6A8AD] text-[16px]" href="#">Studio</a></li>
+                <li><a class="text-[#A6A8AD] text-[16px]" href="#">Community</a></li>
+                <li><a class="text-[#A6A8AD] text-[16px]" href="#">Blog</a></li>
+                <li><a class="text-[#A6A8AD] text-[16px]" href="#">Pricing</a></li>
+            </ul>
+
+            <button class="py-[10px] px-[22px] bg-white text-[#121214] rounded-[32px] ml-auto">Sign up</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="bg-back-Img bg-no-repeat bg-cover">
+        <div class="container mx-auto">
+           <div class="pt-[186px] pb-[168px] w-[32%] text-white">
+            <h2 class="text-[72px] tracking-[1.08px] leading-[72px]">
+                Step into the producer’s playground
+            </h2>
+            <p class="text-[20px] leading-[24px] my-[40px]">
+                Explore the world’s best sample library and an unmatched marketplace of plugins and DAWs.
+            </p>
+            <button class="py-[16px] px-[32px] rounded-[8px] bg-[#0033FF] text-white text-[16px]">Try free</button>
+           </div>
+        </div>
+    </main>
+</body>
+</html>
